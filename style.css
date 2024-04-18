@@ -1,0 +1,244 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+html{font-size:62.5%;}
+
+body{
+    font-family: Hanken Grotesk;
+    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    /*margin: auto  auto;
+    margin-top:200px;
+    width: 900px;
+    height: 500px;
+    */
+    
+    
+}
+
+.result{
+    background:linear-gradient(hsl(252, 100%, 67%) 10% , hsl(241, 81%, 54%));
+    /*display:flex;
+    justify-content: center;
+    align-items: center;*/
+    text-align: center;
+    border-radius: 15px;
+    width: 280px;
+    height: 400px;
+    margin-top: 200px; /*THIS MIGHT CHANGE*/
+    z-index: 1;
+    
+}
+
+
+.result h3{
+    color:hsl(241, 100%, 89%);
+    padding: 12%;
+    font-size: 1.7em;
+}
+
+.grade{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background:linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0)) ;
+    margin: 5% auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: hsla(241, 100%, 89%, 0.626);
+    font-size: 1.2rem;
+    font-weight: 700;
+    }
+
+.grade span{
+    color: hsla(0, 0%, 100%, 0.875);
+    font-size: 5rem;
+    font-weight: 800;
+}
+
+.note{
+    color: hsla(0, 0%, 100%, 0.875);
+    font-size: 2rem;
+    font-weight: 700;
+    padding-top: 3%;
+}
+
+.note p{
+    color: hsla(241, 100%, 89%, 0.781);
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 5% 18%;/*HEEEEEEEEEEEEEERE CHANGE SO THE PARAGRAPHE WILL BE AIRATED*/
+}
+
+/*--------------------------THE SECOND PART---------------------*/
+
+.container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background-color: hsla(0, 0%, 100%, 0.875);
+    box-shadow:0 15px 15px 0 hsl(221, 100%, 96%);
+    border-radius:0 15px 15px 0;
+    width: 282px;
+    height: 400px;
+    margin-top: 200px;
+    position: relative;
+    right: 20px;
+   /* padding: 3%;*/
+    margin-left:10px ;
+   
+}
+
+.container h3{
+    font-size: 1.7em;
+    font-weight: 800;
+    color: hsl(224, 30%, 27%);
+    margin:30px 0px 20px -120px ;
+
+}
+
+.container div{
+    width:200px;
+    height: 40px;
+    padding: 2%;
+    /*margin-left:2px ;*/
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 15px;
+
+}
+
+.container img{
+    padding: 2%;
+    width:25px;
+    height: 22px;
+}
+.b1{
+    background-color: hsla(0, 100%, 67%, 0.09);
+    color: hsla(0, 100%, 67%, 0.81);
+}
+
+.b2{
+    background-color: hsla(39, 100%, 56%, 0.09);
+    color: hsla(39, 100%, 56%, 0.81);
+}
+.b3{
+    background-color: hsla(166, 100%, 37%, 0.09);
+    color: hsla(166, 100%, 37%, 0.81);
+}
+.b4{
+    background-color: hsla(234, 85%, 45%, 0.09);
+    color: hsla(234, 85%, 45%, 0.81);
+}
+.score{
+    color:hsl(224, 30%, 27%) ;
+    
+    font-weight: 800;
+    margin-left: 35%;
+}
+
+.percent{
+    color:hsla(224, 30%, 27%, 0.662);
+    font-weight: 700;
+    padding: 1%;
+}
+
+.container div.button:last-of-type{
+    width:200px;
+    height: 40px;
+    padding: 2%;
+    border-radius: 50px;
+    background-color: hsl(224, 30%, 27%);
+    color: hsla(0, 0%, 100%, 0.863);
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.container div.button:last-of-type:hover{
+    background:linear-gradient(hsl(252, 100%, 67%) 10% , hsl(241, 81%, 54%));
+}
+
+@media only screen and (max-width:376px){
+   
+    body{
+       flex-direction: column;
+       overflow: hidden;
+    }
+    .result{
+        
+        border-radius:0 0 45px 45px ;
+        margin-top: 0;
+        width:375px;
+        height: 360px;
+    }
+    .result h3{
+        
+        padding: 5%;
+    }
+    .grade{
+        width: 130px;
+        height: 130px;
+        margin: 3% auto;
+        }
+        .note p{
+           
+            font-size: 1.5rem;
+            font-weight: 500;
+            padding: 5% 15%;/*HEEEEEEEEEEEEEERE CHANGE SO THE PARAGRAPHE WILL BE AIRATED*/
+        }
+
+    .container{
+       
+        border-radius:0;
+        width: 375px;
+        height: 400px;
+        margin-top: 0;
+        position: relative;
+        right: 0;
+       padding: 0;
+        margin-left:0 ;
+        box-shadow:none;
+    }
+    .container h3{
+        margin:30px 110px 20px -120px ;
+    }
+
+    .container div{
+        width:310px;
+        height: 90px;
+        padding: 2%;
+        /*margin-left:2px ;*/
+        
+        font-size: 1.5rem;
+        font-weight: 800;
+       
+        margin-bottom: 8px;
+    
+    }
+    .container img{
+        width:30px;
+        height: 32px;
+    }
+    .container div.button:last-of-type{
+        width:310px;
+        height: 110px;
+        padding: 0;
+       
+        font-size: 1.5rem;
+        margin-top: 15px;
+    }
+   
+
+}
